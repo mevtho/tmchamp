@@ -1,0 +1,38 @@
+<html>
+<head>
+<?php cssStyle("style.css.php") ?>
+<title><?php echo $conf['title']; ?></title>
+<?php getHeadItems(); ?>
+
+</head>
+
+<body>
+
+<div align="center">
+<br />
+&nbsp;
+<table border="0" cellpadding="4" cellspacing="0" width="700" >
+<tr>
+    <td class="titlebar"><a href="http://tmChamp.mevtho.com" target="_blank"><img src="<?php  echo getThemeDir(); ?>/images/logo.gif"></a><?php echo (strlen(getShortName())!=0)?getShortName():"tmChamp"; ?>
+    </td>
+</tr>
+<tr>
+    <td class="menubar"> 
+        <b><font color="#FFFFFF">Menu : <?php menu(); ?></font></b>
+    </td>
+</tr>
+<tr class="content">
+    <td class="content"><?php content(); ?><br><br></td>
+</tr>
+<tr>
+    <td class="foot"> 
+      <?php foot(); ?>
+    </td>
+</tr>    
+</table>
+</div>
+<br />
+
+</body>
+
+</html>
